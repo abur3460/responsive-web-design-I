@@ -85,8 +85,8 @@ body {
 
 .navigation a {
     
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
     
 }
 
@@ -235,7 +235,7 @@ ul {
 
   
 
-@media(max-width: 1400px) {
+@media(min-width: 801px) and (max-width: 1400px) {
     .container {
       width: 1000px;
     }
