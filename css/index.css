@@ -71,16 +71,29 @@ body {
 	
 }
 
-.container2 nav {
+
+.container2 {
 	display: flex;
 	flex-direction: row;
 	text-decoration: none;
 	color: grey;
 	padding-bottom: 50px;
     font-size: 20px;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
+
+.navigation a {
+    
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.container2 img {
+    padding-left: 50px;
+}
+
 .logo1 {
 	width: 28%;
 
@@ -221,50 +234,86 @@ ul {
 
 
   
+
+@media(max-width: 1400px) {
+    .container {
+      width: 1000px;
+    }
+  
+   .container2 {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    }
+    .nav-img{
+        align-self: center;
+        padding-bottom: 25px;
+    }
+   .navigation {
+       display: flex;
+       justify-content: space-evenly;
+   }
+    .main-header img {
+        display: none;
+    }
+    p {
+        padding-right: 25px;
+    }
+    
+}
+
+  
   @media(max-width: 800px) {
     .container {
       width: 500px;
     }
-  
+    .container2 {
+        flex: column;
+    }
     .container header nav {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
     }
-
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
     .container header nav a {
-        border-bottom: solid lightgrey 1px;
+        
         padding-bottom: 25px;
     }
-  
+
     .container header nav img {
         padding-bottom: 25px;
-        width: 50%;
+        width: 100%;
     }
     .container header nav a {
       margin-bottom: 20px;
       text-align: center;
     }
-
     .main-header img {
         display: none;
         
     }
-    p {
-        flex-wrap: nowrap;
-    }
+    
     a {
         border-bottom: solid lightgrey 1px;
         width: 100%;
     }
-    a:nth-child(6) {
+    a:nth-child(1) {
         padding-top: 25px;
         border-top: solid lightgrey 1px;
     }
     .top-body {
         flex-direction: column;
     }
+
     .bottom-body {
         flex-direction: column;
     }
   }
+
