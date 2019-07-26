@@ -74,12 +74,11 @@ body {
 .container2 nav {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: nowrap;
 	text-decoration: none;
 	color: grey;
 	padding-bottom: 50px;
-	font-size: 20px;
+    font-size: 20px;
+    justify-content: space-evenly;
 
 }
 .logo1 {
@@ -88,7 +87,8 @@ body {
 }
 .container2 a {
 	text-decoration: none;
-	color: grey;
+    color: grey;
+    
 }
 
 .main-header {
@@ -96,9 +96,9 @@ body {
 	display: flex;
 	flex-direction: row;
 	margin-top: 55px;
-	padding-bottom: 55px;
-	justify-content: center;
-	justify-content: space-evenly;
+    padding-bottom: 55px;
+    justify-content: center;
+	
 }
 
 
@@ -111,7 +111,7 @@ body {
  
 
 .title1 {
-	font-size: 150px;
+	font-size: 125px;
 	text-align: center;
 	
 	
@@ -130,8 +130,9 @@ body {
 	width: 250px;
 	height: 75px;
 	font-size: 23px;
-	transition-duration: .7s;
-	margin-left: 180px;
+    transition-duration: .7s;
+    align-self: center;
+
 	
 }
 .button:hover {
@@ -156,7 +157,6 @@ body {
 }
 
 .top-body p {
-	width: 75%;
 	font-size: 27px;
 	padding-bottom: 55px;
 		
@@ -185,7 +185,6 @@ body {
 }
 
 .bottom-body p {
-	width: 80%;
 	font-size: 27px;
 	padding-bottom: 35px;
 		
@@ -212,130 +211,6 @@ body {
 
 /* Begin CSS for services */
 
-.services-container1 {
-width: 100%;
-margin: auto;
-}
-
-.services-container2 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	padding: 65px;
-	
-	margin-bottom: 50px;
-	
-}
-
-.services-container2 a {
-	text-decoration: none;
-	color: grey;
-	font-size: 25px;
-	justify-content: center;
-	
-	
-}
-
-.services-container2 img {
-	height: 50px;
-	
-	
-}
-
-.services-mainbody {
-display: flex;
-flex-direction: row;
-align-content: space-between;
-padding-bottom: 25px;
-padding-top: 50px;
-border-top: solid black 2px;
-border-bottom: solid black 2px;
-}
-
-.services-services h4 {
-	padding-top: 45px;
-	font-size: 70px;
-}
-
-.services-services p {
-	font-size: 30px;
-	padding-bottom: 50px;
-}
-.services-facts h4 {
-	font-size: 70px;
-
-}
-
-.services-facts p {
-	font-size: 30px;
-	width: 50%;
-}
-
-
-.services-box {
-	border: solid black 2px;
-	padding: 50px;
-	background-color: lightgrey;
-	margin: 50px 50px 100px 50px;
-}
-.services-topbody h4 {
-	
-	font-size: 70px;
-	
-	
-}
-
-.services-topbody p {
-	font-size: 30px;
-	
-		
-}
-
-.services-topimg {
-	width: 100%;
-	height: 350px;
-	padding-top: 25px;
-}
-
-
-.services-bottombody h4 {
-	font-size: 70px;
-	
-}
-
-.services-bottombody p {
-	font-size: 30px;	
-}
-
-.services-facts {
-	width: 100%;
-	padding-top: 50px;
-}
-.services-infoimg {
-	height: 700px;
-	width: 700px;
-	padding-top: 50px;
-	padding-right: 100px;
-
-	
-}
-
-.services-button {
-	background: white;
-	border: solid black 1px;
-	color: black;
-	align-items: center;
-	text-decoration: none;
-	justify-content: center;
-	display: flex;
-	width: 250px;
-	height: 75px;
-	font-size: 23px;
-	transition-duration: .7s;
-	
-	
-}
-
 ul {
 	padding-top: 60px;
 	padding-bottom: 100px;
@@ -344,21 +219,7 @@ ul {
 	font-size: 30px;
 }
 
-.services-bottom {
-	display: flex;
-	
-}
 
-.services-copyright {
-	text-align: center;
-	font-size: 20px;
-}
-
-.container {
-    width: 2000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
   
   @media(max-width: 800px) {
     .container {
@@ -368,8 +229,7 @@ ul {
     .container header nav {
       display: flex;
       flex-direction: column-reverse;
-      
-      
+      align-items: center;
     }
 
     .container header nav a {
@@ -379,7 +239,7 @@ ul {
   
     .container header nav img {
         padding-bottom: 25px;
-        
+        width: 50%;
     }
     .container header nav a {
       margin-bottom: 20px;
@@ -388,8 +248,19 @@ ul {
 
     .main-header img {
         display: none;
+        
     }
-
+    p {
+        flex-wrap: nowrap;
+    }
+    a {
+        border-bottom: solid lightgrey 1px;
+        width: 100%;
+    }
+    a:nth-child(6) {
+        padding-top: 25px;
+        border-top: solid lightgrey 1px;
+    }
     .top-body {
         flex-direction: column;
     }
